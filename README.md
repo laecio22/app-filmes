@@ -1,4 +1,4 @@
-#  App-filmes
+# App-filmes
 Aplicação que lista os filmes e séries do usuário, utilizando a API do TMDB
 # Getting Started with Create React App
 
