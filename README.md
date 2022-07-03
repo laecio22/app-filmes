@@ -1,3 +1,5 @@
+# App-filmes
+Aplicação que lista os filmes e séries do usuário, utilizando a API do TMDB
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
