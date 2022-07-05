@@ -1,11 +1,22 @@
 import React from "react";
-import { ContainerHeader } from "./styled";
+import {
+  ContainerHeader,
+  TitleApp,
+  FontAwesomeIcon,
+  ContainerInputSearch,
+  InputSearch
+} from "./styled";
 
 const Header = () => {
   return (
     <ContainerHeader>
-      <h2>LaecioFlix</h2>
-      <input type={"text"} placeholder={"digite nome do filme ou série"}/>
+      <TitleApp>LaecioFlix</TitleApp>
+      <ContainerInputSearch>
+        <InputSearch type={"text"} placeholder={"digite nome do filme ou série"} />
+        <FontAwesomeIcon>
+          <i className={"fa-solid fa-magnifying-glass"}></i>
+        </FontAwesomeIcon>
+      </ContainerInputSearch>
     </ContainerHeader>
   );
 };
