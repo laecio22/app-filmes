@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from "react";
 import Header from "../../components/Header/Header";
-import { MainContainer } from "./styled";
+import { MainContainer, SectionMovies } from "./styled";
 import Footer from "../../components/Footer/Footer";
+import CardMovie from "../../components/CardMovie/CardMovie";
 import { BASE_URL, API_KEY } from "../../constants/url";
 import axios from "axios";
 
@@ -13,8 +14,7 @@ const Home = () => {
       .then((response) => {
         // console.log(response)
         console.log(response.data.results);
-        setListMovies(response.data.results)
-  
+        setListMovies(response.data.results);
       })
       .catch((error) => {
         console.log(error);
@@ -30,6 +30,11 @@ const Home = () => {
       <Header />
       <MainContainer>
         <h2>Melhores Filmes</h2>
+        <SectionMovies>
+          {listBestMovies?.map((movie) => {
+            return <CardMovie movie={movie} key={movie.id} />;
+          })}
+        </SectionMovies>
       </MainContainer>
       <Footer />
     </>
