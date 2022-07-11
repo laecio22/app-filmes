@@ -1,5 +1,18 @@
 #  App-filmes
 Aplicação que lista os filmes e séries do usuário, utilizando a API do TMDB
+
+# Tecnologias
+ - Html
+ - Css
+ - Javascript
+ - React 
+ - styled-components
+ - axios
+
+ # Funcionando
+  renderização  da lista  de filmes  obtidos  da  API, com  seus dados principais, como  título , data de lançamento , média de  votos , quantidade de  votos
+# Não está  funcionando
+  Realizar  filtro  de  acordo  com que  for  digitado  no input  de  busca  de  filme 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
